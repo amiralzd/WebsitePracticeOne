@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cb5095bf42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+
+    <title>website practice 1</title>
+</head>
+<body>
+    <div class="w-full h-[50px] bg-[#000] sticky top-0 flex justify-between">
+        <div class="w-[33%] h-[50px]">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BAND</a></li>
+                <li><a href="#">TOUR</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li onmouseover="themorebox()"><a href="#">MORE <i class="fa fa-caret-down"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="w-[70px] h-[50px] text-[#fff] text-[20px] text-center pt-[10px] hovr"><i class="fa fa-search"></i></div>
+    </div>
+    
+    <main>
+        <div class="w-full h-[500px] flex mb-[300px]">
+            <img class="w-full h-[800px] max-sm:w-[full] max-sm:h-[291px]" src="img/la.jpg" alt="">
+            <div class="w-[500px] h-[150px] absolute bottom-[-80px] left-[500px]">
+                <div class="hh">
+                    <h3>New York</h3>
+                    <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-[800px] h-[671.59px] cardone">
+            <div class="w-full h-[45px] mt-[10px] mb-[10px] text-center text-[30px]">
+                <h1>THE BAND</h1>
+            </div>
+            <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#797979]">
+                <h1><i>We Love music</i></h1>
+            </div>
+            <div class="w-full h-[135px] mt-[15px] mb-[15px] text-[14.5px]">
+                <p>
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="w-full h-[286.09px] pt-[32px] pb-[32px] flex">
+                <div class="w-[255.99px] h-[222.09px]">
+                    <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                </div>
+                <div class="w-[255.99px] h-[222.09px]">
+                    <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                </div>
+                <div class="w-[255.99px] h-[222.09px]">
+                    <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[845.49px] bg-black">
+            <div class="w-[800px] h-[845.49px] mr-[359.6px] ml-[359.6px] pt-[64px] pb-[64px] pr-[16px] pl-[16px]">
+                <div class="w-full h-[45px] mt-[10px] mb-[10px] text-center text-[30px] text-[#fff]"><h1>TOUR DATES</h1></div>
+                <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#797979]"><h1><i>Remembeer to book your tickets</i></h1></div>
+                <br>
+                <div class="w-full h-[118.7px]">
+                    <div class="w-full h-[39.3px] pt-[8px] pb-[8px] pl-[16px] pr-[16px] bg-[#fff] text-[#757575]">
+                        "Setember"
+                        <span class="w-[69.69px] h-[22.5px] bg-[#f44336] pr-[8px] pl-[8px] ml-[16px] text-[#fff]">Sold out</span>
+                    </div>
+                    <div class="w-full h-[39.3px] pt-[8px] pb-[8px] pl-[16px] pr-[16px] bg-[#fff] text-[#757575]">
+                        "October"
+                        <span class="w-[69.69px] h-[22.5px] bg-[#f44336] pr-[8px] pl-[8px] ml-[16px] text-[#fff]">Sold out</span>
+                    </div>
+                    <div class="w-full h-[39.3px] pt-[8px] pb-[8px] pl-[16px] pr-[16px] bg-[#fff] text-[#757575] flex justify-between">
+                        "November"
+                        <div class="w-[24.7] h-[22.5] bg-[#000] text-[#fff] pr-[8px] pl-[8px] rounded-[50%]">3</div>
+                    </div>
+                    <div class="w-[800px] h-[468.79px] ml-[-16px] flex pt-[32px] pb-[32px] pr-[8px] pl-[8px]">
+
+                        <div class="w-[261.33px] h-[388.79px] mb-[16px] pr-[8px] pl-[8px]">
+                            <div class="w-[245.33] h-[183.99px] styleimg">
+                                <div class="w-[245.33] h-[183.99px] style"></div>
+                            </div>
+                            <div class="w-[245.33] h-[204.8px] bg-[#fff] pr-[16px] pl-[16px]">
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px]"><h1><b>New York</b></h1></div>
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-[#757575]">Fri 27 Nov 2016</div>
+                                <div class="w-full h-[45px] mt-[15px] mb-[15px]">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="w-[107.7px] h-[38.5px] pt-[8px] pb-[8px] pr-[16px] pl-[16px] bg-[#000] text-[#fff] text-[15px] hvrr"><button>Buy Tickets</button></div>
+                            </div>
+                        </div>
+
+                        <div class="w-[261.33px] h-[388.79px] mb-[16px] pr-[8px] pl-[8px]">
+                            <div class="w-[245.33] h-[183.99px] styleimg2">
+                                <div class="w-[245.33] h-[183.99px] style"></div>
+                            </div>
+                            <div class="w-[245.33] h-[204.8px] bg-[#fff] pr-[16px] pl-[16px]">
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px]"><h1><b>Paris</b></h1></div>
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-[#757575]">Sat 28 Nov 2016</div>
+                                <div class="w-full h-[45px] mt-[15px] mb-[15px]">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="w-[107.7px] h-[38.5px] pt-[8px] pb-[8px] pr-[16px] pl-[16px] bg-[#000] text-[#fff] text-[15px] hvrr"><button>Buy Tickets</button></div>
+                            </div>
+                        </div>
+
+                        <div class="w-[261.33px] h-[388.79px] mb-[16px] pr-[8px] pl-[8px]">
+                            <div class="w-[245.33] h-[183.99px] styleimg3">
+                                <div class="w-[245.33] h-[183.99px] style"></div>
+                            </div>
+                            <div class="w-[245.33] h-[204.8px] bg-[#fff] pr-[16px] pl-[16px]">
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px]"><h1><b>San Francisco</b></h1></div>
+                                <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-[#757575]">Sun 29 Nov 2016</div>
+                                <div class="w-full h-[45px] mt-[15px] mb-[15px]">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="w-[107.7px] h-[38.5px] pt-[8px] pb-[8px] pr-[16px] pl-[16px] bg-[#000] text-[#fff] text-[15px] hvrr"><button>Buy Tickets</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[800px] h-[458.2px] mr-auto ml-auto pt-[64px] pb-[64px] pr-[16px] pl-[16px]">
+            <div class="w-full h-[45px] mt-[15px] mb-[15px] text-[30px] text-center"><h1>CONTACT</h1></div>
+            <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#757575]"><i>Fan? Drop a note!</i></div>
+            <div class="w-full h-[222.7px] flex">
+                <div class="w-[383.99px] h-[81px]">
+                    <div class="w3-col m6 w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                      </div>
+                </div>
+                <div class="w-[383.99px] h-[158.7px] relative">
+                    <div class="w-[38.99px] h-[40.1px] flex mb-[8px]">
+                        <div class="w-[199.99px] h-[40.1px] pr-[8px] pl-[8px]">
+                            <input class="w-[183.99px] h-[40.1px] text-[18px] p-[8px] border-[1px] border-solid border-[#757575]" type="text" placeholder="Name">
+                        </div>
+                        <div class="w-[199.99px] h-[40.1px]">
+                            <input class="w-[183.99px] h-[40.1px] text-[18px] p-[8px] border-[1px] border-solid border-[#757575]" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <input class="w-[375.99px] h-[40.1px] text-[18px] p-[8px] border-[1px] border-solid border-[#757575] ml-[8px]" type="text" placeholder="Message">
+                    <button class="w-[71.3px] h-[38.5px] bg-[#000] mt-[16px] mb-[16px] pt-[8px] pb-[8px] pr-[16px] pl-[16px] right-0 bottom-0 absolute text-[#fff] hvrr">SEND</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[600.16px] bkimg mb-[250px]">
+            <img class="w-full" src="img/map.jpg" alt="">
+        </div>
+
+        <div class="w-full h-[216.5px] pt-[64px] pb-[64px] pl-[16px] pr-[16px] text-center text-[25px] text-[#757575]">
+            <a href=""><i class="fa fa-facebook-official"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-snapchat"></i></a>
+            <a href=""><i class="fa fa-pinterest-p"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <div class="w-full h-[22.5px] text-center text-base text-[#757575]">Powered by <span><a href="#"><u>w3.css</u></a></span></div>
+        </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

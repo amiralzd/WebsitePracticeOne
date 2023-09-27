@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ul{
+    display: flex;
+}
+
+ul li{
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+ul li a{
+    padding: 16px;
+    font-size: 18px;
+    color: #fff;
+}
+
+ul li a:hover{
+    background: #efefef;
+    color: #000;
+}
+
+.showdis{
+    display: block !important;
+}
+
+.hvr{
+    cursor: pointer;
+}
+
+.hvr:hover{
+    background: #efefef;
+}
+
+.hovr{
+    cursor: pointer;
+}
+
+.hovr:hover{
+    background: rgb(255, 64, 64);
+}
+
+.hh{
+    padding: 0.01em 16px;
+    color: #fff!important;
+    padding-bottom: 32px!important;
+    padding-top: 32px!important;
+    transform: translate(-50%,0%);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    padding-bottom: 32px!important;
+    text-align: center!important;
+}
+
+.cardone{
+    margin: 0px 359.6px;
+    padding: 64px 16px;
+}
+
+.hvrr:hover{
+    background: #efefef;
+    color: #000;
+    cursor: pointer;
+}
+
+.style:hover{
+    background: #000;
+    opacity: 0.4;
+}
+
+.styleimg{
+    background-image: url(../img/newyork.jpg);
+    background-size: cover;
+}
+
+.styleimg2{
+    background-image: url(../img/paris.jpg);
+    background-size: cover;
+}
+
+.styleimg3{
+    background-image: url(../img/sanfran.jpg);
+    background-size: cover;
+}
