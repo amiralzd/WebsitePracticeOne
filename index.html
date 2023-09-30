@@ -26,20 +26,52 @@
         <div class="w-[33%] h-[50px]">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">BAND</a></li>
-                <li><a href="#">TOUR</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li onmouseover="themorebox()"><a href="#">MORE <i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#" class="max-sm:hidden">BAND</a></li>
+                <li><a href="#" class="max-sm:hidden">TOUR</a></li>
+                <li><a href="#" class="max-sm:hidden">CONTACT</a></li>
+                <li onmouseover="inmorebox()" onmouseout="outmorebox()" class="max-sm:hidden"><a href="#">MORE <i class="fa fa-caret-down"></i></a></li>
             </ul>
         </div>
 
-        <div class="w-[70px] h-[50px] text-[#fff] text-[20px] text-center pt-[10px] hovr"><i class="fa fa-search"></i></div>
+        <a href="" onclick="opnclick()" class="w-[30px] h-[30px] text-center mt-[10px] mr-[10px] sm:hidden"><i class="fa-solid fa-bars text-[#fff] text-[25px]"></i></a>
+
+        <div class="w-[70px] h-[50px] text-[#fff] text-[20px] text-center pt-[10px] hovr max-sm:hidden"><i class="fa fa-search"></i></div>
+    </div>
+
+    <div id="clickonn" class="w-full h-[200px] sticky top-[50px] hidden">
+        <div class="w-full h-[50px] bg-[#000] sticky top-0 flex justify-between hverrr pl-[16px] pr-[16px] pt-[10px] pb-[5px] text-[18px] text-[#fff]">
+            <a href="#">BAND</a>
+        </div>
+
+        <div class="w-full h-[50px] bg-[#000] sticky top-0 flex justify-between hverrr pl-[16px] pr-[16px] pt-[10px] pb-[5px] text-[18px] text-[#fff]">
+            <a href="#">TOUR</a>
+        </div>
+
+        <div class="w-full h-[50px] bg-[#000] sticky top-0 flex justify-between hverrr pl-[16px] pr-[16px] pt-[10px] pb-[5px] text-[18px] text-[#fff]">
+            <a href="#">CONTACT</a>
+        </div>
+
+        <div class="w-full h-[50px] bg-[#000] sticky top-0 flex justify-between hverrr pl-[16px] pr-[16px] pt-[10px] pb-[5px] text-[18px] text-[#fff]">
+            <a href="#">MERCH</a>
+        </div>
+    </div>
+
+    <div id="showandhide" class="w-[130px] h-[100px] bg-orange-500 sticky top-[50px]  left-[350px] shadowbox hidden">
+        <a href="">
+            <div class="w-[130px] h-[33.34px] pt-[4px] pb-[4px] pr-[16px] pl-[16px] bg-[#fff]"><h1>Merchandise</h1></div>
+        </a>
+        <a href="">
+            <div class="w-[130px] h-[33.34px] pt-[4px] pb-[4px] pr-[16px] pl-[16px] bg-[#fff]"><h1>Extras</h1></div>
+        </a>
+        <a href="">
+            <div class="w-[130px] h-[33.34px] pt-[4px] pb-[4px] pr-[16px] pl-[16px] bg-[#fff]"><h1>Media</h1></div>
+        </a>
     </div>
     
     <main>
-        <div class="w-full h-[500px] flex mb-[300px]">
-            <img class="w-full h-[800px] max-sm:w-[full] max-sm:h-[291px]" src="img/la.jpg" alt="">
-            <div class="w-[500px] h-[150px] absolute bottom-[-80px] left-[500px]">
+        <div class="w-full h-[500px] flex mb-[300px] max-sm:w-full max-sm:mb-0 max-sm:h-[350px]">
+            <img class="w-full h-[800px] max-sm:w-[full] max-sm:h-[291px] z-[-2]" src="img/la.jpg" alt="">
+            <div class="w-[500px] h-[150px] absolute bottom-[-80px] left-[500px] max-sm:hidden">
                 <div class="hh">
                     <h3>New York</h3>
                     <p><b>The atmosphere in New York is lorem ipsum.</b></p>
@@ -47,36 +79,36 @@
             </div>
         </div>
         
-        <div class="w-[800px] h-[671.59px] cardone">
+        <div class="w-[800px] h-[671.59px] cardone max-sm:m-0 max-sm:p-[20px] max-sm:w-full max-sm:h-[1200px]">
             <div class="w-full h-[45px] mt-[10px] mb-[10px] text-center text-[30px]">
                 <h1>THE BAND</h1>
             </div>
             <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#797979]">
                 <h1><i>We Love music</i></h1>
             </div>
-            <div class="w-full h-[135px] mt-[15px] mb-[15px] text-[14.5px]">
+            <div class="w-full h-[135px] mt-[15px] mb-[15px] text-[14.5px] max-sm:mb-[100px]">
                 <p>
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="w-full h-[286.09px] pt-[32px] pb-[32px] flex">
-                <div class="w-[255.99px] h-[222.09px]">
+            <div class="w-full h-[286.09px] pt-[32px] pb-[32px] grid grid-cols-3 max-sm:grid-cols-1">
+                <div class=" max-sm:w-full">
                     <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
-                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px] max-sm:w-[200px] max-sm:h-[200px]" src="img/bandmember.jpg" alt="">
                 </div>
-                <div class="w-[255.99px] h-[222.09px]">
+                <div class=" max-sm:w-full">
                     <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
-                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px] max-sm:w-[200px] max-sm:h-[200px]" src="img/bandmember.jpg" alt="">
                 </div>
-                <div class="w-[255.99px] h-[222.09px]">
+                <div class=" max-sm:w-full">
                     <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center"><h1>Name</h1></div>
-                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px]" src="img/bandmember.jpg" alt="">
+                    <img class="w-[153.59px] h-[153.59px] m-auto rounded-[4px] max-sm:w-[200px] max-sm:h-[200px]" src="img/bandmember.jpg" alt="">
                 </div>
             </div>
         </div>
 
         <div class="w-full h-[845.49px] bg-black">
-            <div class="w-[800px] h-[845.49px] mr-[359.6px] ml-[359.6px] pt-[64px] pb-[64px] pr-[16px] pl-[16px]">
+            <div class="w-[800px] h-[845.49px] mr-[359.6px] ml-[359.6px] pt-[64px] pb-[64px] pr-[16px] pl-[16px] max-sm:p-0 max-sm:m-0 max-sm:w-full">
                 <div class="w-full h-[45px] mt-[10px] mb-[10px] text-center text-[30px] text-[#fff]"><h1>TOUR DATES</h1></div>
                 <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#797979]"><h1><i>Remembeer to book your tickets</i></h1></div>
                 <br>
@@ -139,7 +171,7 @@
         <div class="w-[800px] h-[458.2px] mr-auto ml-auto pt-[64px] pb-[64px] pr-[16px] pl-[16px]">
             <div class="w-full h-[45px] mt-[15px] mb-[15px] text-[30px] text-center"><h1>CONTACT</h1></div>
             <div class="w-full h-[22.5px] mt-[15px] mb-[15px] text-center text-[#757575]"><i>Fan? Drop a note!</i></div>
-            <div class="w-full h-[222.7px] flex">
+            <div class="w-full h-[222.7px] flex pt-[32px] pb-[32px]">
                 <div class="w-[383.99px] h-[81px]">
                     <div class="w3-col m6 w3-large w3-margin-bottom">
                         <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
@@ -147,7 +179,7 @@
                         <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
                       </div>
                 </div>
-                <div class="w-[383.99px] h-[158.7px] relative">
+                <div class="w-[383.99px] h-[158.7px] relative z-[-1]">
                     <div class="w-[38.99px] h-[40.1px] flex mb-[8px]">
                         <div class="w-[199.99px] h-[40.1px] pr-[8px] pl-[8px]">
                             <input class="w-[183.99px] h-[40.1px] text-[18px] p-[8px] border-[1px] border-solid border-[#757575]" type="text" placeholder="Name">

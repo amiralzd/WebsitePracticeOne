@@ -54,6 +54,7 @@ ul li a:hover{
     position: absolute;
     padding-bottom: 32px!important;
     text-align: center!important;
+    z-index: -1;
 }
 
 .cardone{
@@ -85,4 +86,22 @@ ul li a:hover{
 .styleimg3{
     background-image: url(../img/sanfran.jpg);
     background-size: cover;
+}
+
+.bpxmoredis{
+    display: block !important;
+}
+
+.shadowbox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hverrr:hover{
+    background: #efefef;
+    color: #000;
+    cursor: pointer;
+}
+
+.show{
+    display: block!important;
 }
